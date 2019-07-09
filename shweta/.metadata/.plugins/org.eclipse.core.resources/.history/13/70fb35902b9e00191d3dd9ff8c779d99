@@ -1,0 +1,12 @@
+package rpncalculator;
+
+public class RPNCalculator {
+
+	public double evaluate(String string) {
+		// TODO Auto-generated method stub
+		
+		return 22;
+	}
+	
+
+}

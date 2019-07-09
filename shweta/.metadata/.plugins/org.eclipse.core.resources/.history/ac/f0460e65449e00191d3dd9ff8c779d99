@@ -1,0 +1,36 @@
+package rpncalculator;
+
+public class RPNCalculator2 extends Operations{
+public double evaluate(String input) {
+		Operations operation;
+		// TODO Auto-generated method stub
+		String[] tokens = input.split(" ");
+		
+		for(String token : tokens) {
+			
+			if(token.equals("+")) {
+				operation = new Addition();
+				result = operation.evaluateResult(firstOperand, secondOperand);
+				pushStack(result);
+			}
+			else if(token.equals("-")) {
+				operation = new Subtraction();
+				result = operation.evaluateResult(firstOperand, secondOperand);
+				pushStack(result);
+			}
+			else if(token.equals("*")) {
+				operation = new Multiplication();
+				result = operation.evaluateResult(firstOperand, secondOperand);
+				pushStack(result);
+			}
+			else if(token.equals("/")) {
+				operation = new Division();
+				result = operation.evaluateResult(firstOperand, secondOperand);
+				pushStack(result);
+			}
+		}
+		return popStack();		
+}
+
+
+}

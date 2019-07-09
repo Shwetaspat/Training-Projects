@@ -1,0 +1,12 @@
+package rpncalculator;
+
+public class Addition extends Operations {
+	
+
+	public double evaluate(int firstNumber, int secondNumber) {
+		
+		// TODO Auto-generated method stub
+		return firstNumber+secondNumber;
+		
+	}
+}

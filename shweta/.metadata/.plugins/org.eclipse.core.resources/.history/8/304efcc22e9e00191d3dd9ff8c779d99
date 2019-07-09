@@ -1,0 +1,16 @@
+package rpncalculator;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class RPNCalculatorTest {
+	@Test
+	public void tsetSimpleAddition() {
+		RPNCalculator rpnCalculator = new RPNCalculator();
+		double result = rpnCalculator.evaluate("10 12 +");
+		
+		assertEquals(22, result, 0.0001);
+		
+		assertEquals(122 ,rpnCalculator.evaluate("100 22 +") , 0.0001);
+	}
+}

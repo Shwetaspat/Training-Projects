@@ -1,0 +1,27 @@
+package rpncalculator;
+
+import java.util.Stack;
+
+public class RPNCalculator {
+
+	double firstOperand;
+	double secondOperand;
+	public double evaluate(String input) {
+		// TODO Auto-generated method stub
+		String[] tokens = input.split(" ");
+		Stack<Double> stack = new Stack<Double>();
+		for(String token : tokens) {
+			if(token.equals("+")) {
+				firstOperand = stack.pop();
+				secondOperand = stack.pop();
+				double result = firstOperand + secondOperand;
+				stack.push(result);
+			} else {
+				stack.push(Double.parseDouble(token));
+			}
+		}
+		return stack.pop();
+	}
+	
+
+}

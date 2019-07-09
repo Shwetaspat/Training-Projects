@@ -1,0 +1,21 @@
+package rpncalculator;
+
+public class Division extends Operations{
+	public double evaluate(String input) {
+		
+		// TODO Auto-generated method stub
+		String[] tokens = input.split(" ");
+		
+		for(String token : tokens) {
+			
+			if(token.equals("/")) {
+				
+				firstOperand = popStack();
+				secondOperand = popStack();
+				result = firstOperand + secondOperand;
+				pushStack(result);
+			}
+		}
+		return popStack();
+	}
+}

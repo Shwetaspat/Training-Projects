@@ -1,0 +1,43 @@
+package rpncalculator;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class RPNCalculatorTest {
+	@Test
+	public void tsetSimpleAddition() {
+		RPNCalculator rpnCalculator = new RPNCalculator();
+		double result = rpnCalculator.evaluate("10 12 +");
+		
+		assertEquals(22, result, 0.0001);
+		
+		assertEquals(46 ,rpnCalculator.evaluate("10 12 3 * +") , 0.0001);
+	}
+	@Test
+	public void testSimpleSubtraction() {
+		RPNCalculator rpnCalculator = new RPNCalculator();
+		double result = rpnCalculator.evaluate("10 12 -");
+		
+		assertEquals(-2, result, 0.0001);
+		
+		//assertEquals(78 ,rpnCalculator.evaluate("100 22 -") , 0.0001);
+	}
+	@Test
+	public void testSimpleMultiplication() {
+		RPNCalculator rpnCalculator = new RPNCalculator();
+		double result = rpnCalculator.evaluate("10 12 *");
+		
+		assertEquals(120, result, 0.0001);
+		
+		//assertEquals(78 ,rpnCalculator.evaluate("100 22 -") , 0.0001);
+	}
+	@Test
+	public void testSimpleDivision() {
+		RPNCalculator rpnCalculator = new RPNCalculator();
+		double result = rpnCalculator.evaluate("5 10 /");
+		
+		assertEquals(2, result, 0.0001);
+		
+		assertEquals(38 ,rpnCalculator.evaluate("100 50 / 10 9 + *") , 0.0001);
+	}
+}

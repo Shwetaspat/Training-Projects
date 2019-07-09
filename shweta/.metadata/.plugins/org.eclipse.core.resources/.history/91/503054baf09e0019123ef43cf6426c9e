@@ -1,0 +1,10 @@
+package rpnbdd;
+
+public class RPNCalculator {
+
+	public double evaluate(String input) {
+		// TODO Auto-generated method stub
+		return 22;
+	}
+
+}

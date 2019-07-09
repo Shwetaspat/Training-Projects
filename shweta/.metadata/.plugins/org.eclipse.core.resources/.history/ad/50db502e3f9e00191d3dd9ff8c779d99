@@ -1,0 +1,25 @@
+package rpncalculator;
+
+import java.util.Stack;
+
+public abstract class Operations {
+	double firstOperand;
+	double secondOperand;
+	double result;
+	Stack<Double> stack = new Stack<Double>();
+
+	public double evaluate(String input) {
+		
+		// TODO Auto-generated method stub
+		String[] tokens = input.split(" ");
+		
+		
+		return popStack();
+}
+	public double popStack() {
+		return stack.pop();
+	}
+	public void pushStack(double result) {
+		 stack.push(result);
+	}
+}

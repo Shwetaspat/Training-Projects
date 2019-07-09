@@ -1,0 +1,65 @@
+package rpncalculator;
+
+import java.util.Stack;
+
+public class RPNCalculator {
+
+	double firstOperand;
+	double secondOperand;
+	double result;
+	Stack<Double> stack = new Stack<Double>();
+	Operations operation;
+
+	public double evaluate(String input) {
+		
+		// TODO Auto-generated method stub
+		String[] tokens = input.split(" ");
+		
+		for(String token : tokens) {
+			
+			if(token.equals("+")) {
+				operation = new Addition();
+				result = firstOperand + secondOperand;
+				pushStack(result);
+				
+			} else if(token.equals("-")) {
+				extractInput();
+
+				result = firstOperand - secondOperand;
+				pushStack(result);
+				
+			} else if(token.equals("*")) {
+				extractInput();
+
+				result = firstOperand * secondOperand;
+				pushStack(result);
+				
+			}else if(token.equals("/")) {
+				extractInput();
+
+				result = firstOperand / secondOperand;
+				pushStack(result);
+			}
+			else {
+				
+				pushStack(Double.parseDouble(token));
+			}
+		}
+		
+		return popStack();
+	}
+	private void extractInput() {
+		secondOperand = popStack();
+		firstOperand = popStack();
+	}
+	public void performOperation(Stack <Double> stack, Operations operation) {
+		extractInput();
+
+	}
+	public double popStack() {
+		return stack.pop();
+	}
+	public void pushStack(double result) {
+		 stack.push(result);
+	}
+}

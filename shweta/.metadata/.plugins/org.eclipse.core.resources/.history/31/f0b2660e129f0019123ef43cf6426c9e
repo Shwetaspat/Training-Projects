@@ -1,0 +1,27 @@
+package simpleCalculatorSoap;
+
+import static org.junit.Assert.assertEquals;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Steps {
+	@Given("RPNCalculator Soap Service")
+	public void rpncalculatorSoapService() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@When("I give an input as {int} and {int}")
+	public void iGiveAnInputAsAnd(Integer int1, Integer int2) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@Then("I should get output as {int}")
+	public void iShouldGetOutputAs(Integer int1) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+}

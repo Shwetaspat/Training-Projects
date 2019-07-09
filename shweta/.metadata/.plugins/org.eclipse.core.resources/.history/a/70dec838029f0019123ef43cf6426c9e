@@ -1,0 +1,20 @@
+
+Feature: RPNCalculator
+
+  Scenario: Testing simple addition
+  Given RPNCalculator
+	When I give an input as "100 12 +"
+	Then I should get "112"
+	
+	Scenario Outline: Testing simple addition
+  Given RPNCalculator
+	When I give an input as <input>
+	Then I should get <output>
+	
+	Examples:
+			| input     | output |
+			| "10 12 +" | "22"  |
+			| "4 5 +"   | "9"   |
+  
+
+ 

@@ -1,0 +1,10 @@
+package rpncalculator;
+
+public class Subtraction extends Operations{
+public double evaluateResult(int firstNumber, int secondNumber) {
+		
+		// TODO Auto-generated method stub
+		return firstNumber-secondNumber;
+		
+	}
+}

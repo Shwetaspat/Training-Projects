@@ -1,0 +1,11 @@
+
+Feature: RPNCalculator
+  I want to use this template for my feature file
+
+  Scenario: Testing simple addition
+  Given RPNCalculator
+	When I give an input as "100 12 +"
+	Then I should get "122"
+  
+
+ 

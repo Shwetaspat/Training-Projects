@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;simpleCalculatorSoap/src/test/CalculatorFeatues.feature&apos; to &apos;CalculatorFeatures.feature&apos;" description="Rename resource &apos;CalculatorFeatues.feature&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/test/CalculatorFeatues.feature" name="CalculatorFeatures.feature" stamp="1562319495952" updateReferences="true"/>
+</session>

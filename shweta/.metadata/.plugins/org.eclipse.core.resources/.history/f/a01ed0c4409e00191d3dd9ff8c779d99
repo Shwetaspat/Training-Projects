@@ -1,0 +1,10 @@
+package rpncalculator;
+
+public class Multiplication extends Operations {
+public double evaluate(int firstNumber, int secondNumber) {
+		
+		// TODO Auto-generated method stub
+		return firstNumber-secondNumber;
+		
+	}
+}

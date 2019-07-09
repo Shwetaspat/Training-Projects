@@ -1,0 +1,15 @@
+package rpncalculator;
+
+import java.util.HashMap;
+
+public class MathFactory {
+	public static IMathOperation getObject(String token) {
+		IMathOperation mathOperation = null;
+		
+		HashMap<String,String> classNames = new HashMap<String, String>();
+		
+		
+		return null;
+		
+	}
+}

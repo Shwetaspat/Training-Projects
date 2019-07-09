@@ -1,0 +1,22 @@
+package rpncalculator;
+
+import java.util.Stack;
+
+public class RPNCalculator {
+
+	public double evaluate(String input) {
+		// TODO Auto-generated method stub
+		String[] tokens = input.split(" ");
+		Stack<Double> stack = new Stack<Double>();
+		for(String token : tokens) {
+			if(token.equals("+")) {
+				
+			} else {
+				
+			}
+		}
+		return 22;
+	}
+	
+
+}

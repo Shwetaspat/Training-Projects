@@ -1,0 +1,10 @@
+package rpncalculator;
+
+public class MathFactory {
+	public static IMathOperation getObject(String token) {
+		IMathOperation mathOperation = null;
+		
+		return null;
+		
+	}
+}

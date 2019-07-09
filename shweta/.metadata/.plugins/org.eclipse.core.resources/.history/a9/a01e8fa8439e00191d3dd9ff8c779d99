@@ -1,0 +1,15 @@
+package rpncalculator;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+public class RpnCalculatorTest {
+	Operations operation;
+	double result;
+	@Test
+	public void testSimpleAddition(Addition add) {
+		result = add.evaluate("10 12 +");
+		assertEquals(22, result, 0.0001);
+		
+	}
+
+}

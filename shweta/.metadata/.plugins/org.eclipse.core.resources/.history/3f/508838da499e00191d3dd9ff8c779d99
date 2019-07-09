@@ -1,0 +1,8 @@
+package rpncalculator;
+
+public interface IMathOperation {
+
+
+	double evaluate(double firstOperand, double secondOperand);
+
+}
